@@ -28,26 +28,25 @@
   <p>4- Abdulgadir Abdiwali Faarah:    abdulgadir.a.faarah@hiof.no</p>
   <p>5- Stian Michael Magnussen:       stianmag@hiof.no</p>
 
-  <h2>What we did not manage to do in time:</h2>
-  <ul>
-    <li>Forgotten password for students.</li>
-    <li>Overview of reported messages for administrators.</li>
-    <li>Reporting messages as a guest.</li>
-    <li>One answer per message as lecturer.</li>
-    <li>When a student or lecturer visit the "open" site, their actions should be tied to the user.</li>
-    <li>Creating an app.</li>
-    <li>If an app is made, it should be possible to download the .apk file.</li>
-  </ul>
-  
-  <h2>How the website was made:</h2>
+  <h2>
+    How the website was made:
+  </h2>
   <p>* We started with aquiering approval to fork an existing open source project that had some of the basic functionality needed to make the website work.</p>
   <p>* Source code can be found here: <a href='https://github.com/SveinnIF/User-Management-PHP-MYSQL' > GitHub page.</a></p>
   <p>* The server was set up in a similar manor as the <a href='https://www.cloudbooklet.com/how-to-install-lamp-apache-mysql-php-in-ubuntu-20-04/' > LAMP server tutorial</a> though with a few modifications and additions.</p>
-  
   <h3>The forgotten password system:</h3>
   <p> It asks for forgotten password if the lecturer has written the wrong
     password once, the lecturer is then prompted to input their mail address after
     which they will get a mail with a custom link that takes them to the reset page where they can input a new password.</p>
+  
+  <h3>Anonymous feedback to lecturer:</h3>
+  <p>If a student wishes to send a message to a lecturer but doesn’t want to show his name, 
+    he can do so by ticking a box that makes him anonymous by hiding his name from the lecturer.  
+    This is achieved by using the students ID that was assigned to him when he registered his account. 
+  </p>
+  <p>
+    The code is a simple if statement that checks if the box is ticked or not and it either assigns the students name or ID based on the condition.
+  </p>
   
   <h3>Api system</h3>
   <p>APi stand for Application programming Interface, it's engine under the hood.
