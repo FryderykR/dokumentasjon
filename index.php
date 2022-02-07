@@ -49,6 +49,15 @@
     password once, the lecturer is then prompted to input their mail address after
     which they will get a mail with a custom link that takes them to the reset page where they can input a new password.</p>
   
+   <h3>Anonymous feedback to lecturer:</h3>
+  <p>If a student wishes to send a message to a lecturer but doesn’t want to show his name, 
+    he can do so by ticking a box that makes him anonymous by hiding his name from the lecturer.  
+    This is achieved by using the students ID that was assigned to him when he registered his account. 
+  </p>
+  <p>
+    The code is a simple if statement that checks if the box is ticked or not and it either assigns the students name or ID based on the condition.
+  </p>
+  
   <h3>Api system</h3>
   <p>APi stand for Application programming Interface, it's engine under the hood.
     it's what others can't see on front-end. It takes the request and tell the system
